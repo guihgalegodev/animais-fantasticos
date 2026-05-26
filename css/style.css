@@ -12,7 +12,55 @@ img {
   display: block;
   max-width: 100%;
 }
+a {
+  text-decoration: none;
+}
 
 p {
   margin-bottom: 20px;
+}
+
+body {
+  background: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffbb55;
+  width: 100%;
+  padding: 10px;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  display: block;
+  color: #222;
+  padding: 10px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.grid-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  gap: 20px;
 }
