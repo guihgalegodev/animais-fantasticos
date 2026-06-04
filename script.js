@@ -45,7 +45,6 @@ initAccordionList();
 
 function initScrollSuave() {
   const linksInternos = document.querySelectorAll(".js-menu a[href^='#'");
-  const section = document.querySelectorAll(".grid-section");
 
   function scrollToSection(e) {
     e.preventDefault();
@@ -69,3 +68,28 @@ function initScrollSuave() {
 }
 
 initScrollSuave();
+
+function initAnimacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isVisible = sectionTop - windowMetade < 0;
+
+        if (isVisible) {
+          section.classList.add("ativo");
+        } else {
+          section.classList.remove("ativo");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", animaScroll);
+    animaScroll();
+  }
+}
+
+initAnimacaoScroll();

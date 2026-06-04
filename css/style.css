@@ -220,11 +220,11 @@ body {
   }
 }
 
-.js-tabcontent section {
+.js .js-tabcontent section {
   display: none;
 }
 
-.js .js-tabcontent section.ativo {
+.js-tabcontent section.ativo {
   display: block !important;
   animation: show 0.5s forwards;
 }
@@ -272,4 +272,15 @@ body {
     max-height: 200px;
     opacity: 1;
   }
+}
+
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.5s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
