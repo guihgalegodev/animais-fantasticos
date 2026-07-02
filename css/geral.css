@@ -32,16 +32,14 @@ body {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+  background: #ffbb55;
 }
 
 .menu ul {
   display: flex;
   flex-wrap: wrap;
-  background: #ffbb55;
-  width: 100%;
   padding: 10px;
   justify-content: start;
-  gap: 1.5rem;
 }
 
 .menu li a {
