@@ -30,8 +30,6 @@ body {
 .menu {
   grid-column: 3 / 5;
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
   background: #ffbb55;
 }
 
