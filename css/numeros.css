@@ -23,3 +23,13 @@
   font-size: 1.5rem;
   color: #e54;
 }
+
+@media (max-width: 400px) {
+  .numeros-grid h3 {
+    font-size: 1.5rem;
+  }
+
+  .numeros-grid span {
+    font-size: 1.25rem;
+  }
+}
