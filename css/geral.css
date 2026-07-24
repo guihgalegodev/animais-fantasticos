@@ -318,3 +318,10 @@ body {
   content: "Aberto";
   color: #2cc539;
 }
+
+.btc-preco {
+  background: #2cc539;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
